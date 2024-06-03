@@ -1,5 +1,5 @@
 <?php
 
-echo '测试 github acitons';
+echo 'github acitons实际测试1';
 
 ?>
