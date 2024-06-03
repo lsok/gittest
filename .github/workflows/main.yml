@@ -1,3 +1,4 @@
+name: Deploy to vps
 on:
   push:
     branches: [main]
@@ -8,7 +9,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      
       - name: Deploy to Server
         env:
           HOST: ${{ secrets.HOST }}
