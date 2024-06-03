@@ -5,14 +5,12 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-      environment:
-        name: production
 
     steps:
       - uses: actions/checkout@v2
-
+      
       - name: Deploy to Server
-        env:
+        env: production
           HOST: ${{ secrets.HOST }}
           USERNAME: ${{ secrets.USERNAME }}
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
