@@ -26,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/.github/workflows/main.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
-              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -119,12 +119,12 @@
       <workItem from="1712458360141" duration="246000" />
       <workItem from="1712458617255" duration="1443000" />
       <workItem from="1716604781267" duration="1030000" />
-      <workItem from="1717379909494" duration="2134000" />
+      <workItem from="1717379909494" duration="2746000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5357000" />
+    <option name="totallyTimeSpent" value="5969000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -211,7 +211,7 @@
     <entry file="file://$PROJECT_DIR$/.github/workflows/main.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
         </state>
       </provider>
     </entry>
