@@ -1,28 +1,25 @@
-name: Deploy to Server
-
 on:
   push:
     branches: [main]
 
 jobs:
-
   deploy:
     runs-on: ubuntu-latest
-	  environment: 
-        name: production
-    
+    environment:
+      name: production
+
     steps:
-    - uses: actions/checkout@v2
-    
-    - name: Deploy to Server
-      env:
-        HOST: ${{ secrets.HOST }}
-        USERNAME: ${{ secrets.USERNAME }}
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        PROJECT_DIR: /opt/1panel/apps/openresty/openresty/www/sites/gittest.lsok.net/index/
-		
-      run: |
-        mkdir -p ~/.ssh
-        echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        scp -r . $USERNAME@$HOST:$PROJECT_DIR
+      - uses: actions/checkout@v2
+
+      - name: Deploy to Server
+        env:
+          HOST: ${{ secrets.HOST }}
+          USERNAME: ${{ secrets.USERNAME }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          PROJECT_DIR: /opt/1panel/apps/openresty/openresty/www/sites/gittest.lsok.net/index
+
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          scp -r . $USERNAME@$HOST:$PROJECT_DIR
